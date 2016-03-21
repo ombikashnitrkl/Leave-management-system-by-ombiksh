@@ -6,7 +6,7 @@ It is compatible with PHP 7.0 (starting from v0.4.0) except for Excel exports (o
 
 ## General considerations
 
-* The Jorani application must have write privileges on <code>application/logs</code> folder.
+* The application must have write privileges on <code>application/logs</code> folder.
 * Some PHP extensions are required (e.g. mcrypt, mysqli, xml, zip, gd). 
 * The default user is *ombikash* and password is *bbalet*.
 * A script at the root of the installation (requirements.php) allows you to check your system.
