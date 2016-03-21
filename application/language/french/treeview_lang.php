@@ -1,0 +1,16 @@
+<?php
+/**
+ * Translation file
+ * @copyright  Copyright (c) 2014-2016 Benjamin BALET
+ * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
+ * @link            https://github.com/bbalet/jorani
+ * @since         0.1.0
+ */
+
+$lang['treeview_context_menu_create'] = 'Créer';
+$lang['treeview_context_menu_rename'] = 'Renommer';
+$lang['treeview_context_menu_remove'] = 'Supprimer';
+$lang['treeview_context_menu_edit'] = 'Modifier';
+$lang['treeview_context_menu_copy'] = 'Copier';
+$lang['treeview_context_menu_cut'] = 'Couper';
+$lang['treeview_context_menu_paste'] = 'Coller';

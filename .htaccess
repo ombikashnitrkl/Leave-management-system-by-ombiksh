@@ -1,0 +1,63 @@
+SetEnv ALLOW_OVERWRITE On
+SetEnv HTTP_MOD_GZIP Off
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+
+    RewriteEngine On
+    # Tell PHP that the mod_rewrite module is ENABLED.
+    SetEnv HTTP_MOD_REWRITE On
+
+    # Example showing how to force HTTPS
+    #RewriteCond %{HTTPS} !=on
+    #RewriteRule ^(.*) https://%{SERVER_NAME}%{REQUEST_URI} [R,QSA,L,NE]
+
+    #Remove index.php from URL
+    RewriteCond $1 !^(index\.php|(.*)\.images|css|js|robots\.txt|favicon\.ico)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ ./index.php?$1 [L,QSA]
+</IfModule>
+ 
+<IfModule !mod_rewrite.c> 
+    # Without mod_rewrite, route 404's to the front controller
+    SetEnv HTTP_MOD_REWRITE Off
+    ErrorDocument 404 "Error : Module rewrite is not available check your system with requirements.php"
+ </IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(php|xls|xlsx)$">
+        Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform, must-revalidate"
+        Header set Pragma "no-cache"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+    SetEnv HTTP_MOD_GZIP On
+</IfModule>
+<IfModule !mod_headers.c>
+    #On WAMP, Deflate module needs mod_headers, otherwise it cause an error 500
+    SetEnv HTTP_MOD_GZIP Off
+</IfModule>
+
+<IfModule mod_headers.c>
+    <IfModule mod_deflate.c>
+        <IfModule mod_filter.c>
+            SetOutputFilter DEFLATE
+            AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
+        </IfModule>
+    </IfModule>
+</IfModule>
+
+<ifModule mod_gzip.c>
+    #Enable compression if available
+    SetEnv HTTP_MOD_GZIP On
+    mod_gzip_on Yes
+    mod_gzip_dechunk Yes
+    mod_gzip_item_include file .(html?|txt|css|js|php)$
+    mod_gzip_item_include handler ^cgi-script$
+    mod_gzip_item_include mime ^text/.*
+    mod_gzip_item_include mime ^application/x-javascript.*
+    mod_gzip_item_exclude mime ^image/.*
+    mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>

@@ -1,0 +1,138 @@
+<?php
+/**
+ * Translation file
+ * @copyright  Copyright (c) 2014-2016 Benjamin BALET
+ * @license      http://opensource.org/licenses/AGPL-3.0 AGPL-3.0
+ * @link            https://github.com/bbalet/jorani
+ * @since         0.1.0
+ * @author       Christian SONNENBERG
+ */
+
+$lang['users_index_title'] = 'Liste der User';
+$lang['users_index_thead_tip_active'] = 'Aktiv';
+$lang['users_index_thead_tip_inactive'] = 'Inaktiv';
+$lang['users_index_thead_tip_edit'] = 'Userdetails bearbeiten';
+$lang['users_index_thead_tip_delete'] = 'User löschen';
+$lang['users_index_thead_tip_reset'] = 'Passwort zurücksetzen';
+$lang['users_index_thead_id'] = 'ID';
+$lang['users_index_thead_firstname'] = 'Vorname';
+$lang['users_index_thead_lastname'] = 'Nachname';
+$lang['users_index_thead_login'] = 'Anmelden';
+$lang['users_index_thead_email'] = 'E-Mail';
+$lang['users_index_thead_role'] = 'Rolle';
+$lang['users_index_thead_manager'] = 'Vorgesetzter';
+$lang['users_index_button_export'] = 'Diese Liste exportieren';
+$lang['users_index_button_create_user'] = 'Neuen User anlegen';
+$lang['users_index_button_import_user'] = 'User importieren';
+$lang['users_index_popup_delete_title'] = 'User löschen';
+$lang['users_index_popup_delete_message'] = 'Sie sind dabei einen User zu löschen, dieser Vorgang kann nicht rückgängig gemacht werden.';
+$lang['users_index_popup_delete_question'] = 'Möchten Sie fortfahren?';
+$lang['users_index_popup_delete_button_yes'] = 'Ja';
+$lang['users_index_popup_delete_button_no'] = 'Nein';
+$lang['users_index_popup_password_title'] = 'Passwort ändern';
+$lang['users_index_popup_password_button_cancel'] = 'Abbrechen';
+$lang['users_index_popup_import_title'] = 'User importieren';
+$lang['users_index_popup_field_filename'] = 'Dateiname';
+$lang['users_index_popup_import_button_cancel'] = 'Abbrechen';
+
+$lang['employees_index_title'] = 'Liste der Angestellten';
+
+$lang['users_myprofile_title'] = 'Meine persönlichen Informationen';
+$lang['users_myprofile_html_title'] = 'Meine persönlichen Informationen';
+$lang['users_myprofile_field_firstname'] = 'Vorname';
+$lang['users_myprofile_field_lastname'] = 'Nachname';
+$lang['users_myprofile_field_manager'] = 'Vorgesetzter';
+$lang['users_myprofile_field_contract'] = 'Vertrag';
+$lang['users_myprofile_field_position'] = 'Position';
+$lang['users_myprofile_field_entity'] = 'Einheit';
+$lang['users_myprofile_field_hired'] = 'Anmeldedatum';
+$lang['users_myprofile_field_identifier'] = 'Interner Identifikator';
+
+$lang['users_edit_title'] = 'User # bearbeiten';
+$lang['users_edit_html_title'] = 'User bearbeiten';
+$lang['users_edit_field_firstname'] = 'Vorname';
+$lang['users_edit_field_lastname'] = 'Nachname';
+$lang['users_edit_field_login'] = 'Anmelden';
+$lang['users_edit_field_email'] = 'E-Mail';
+$lang['users_edit_field_role'] = 'Rolle';
+$lang['users_edit_field_manager'] = 'Vorgesetzter';
+$lang['users_edit_field_manager_alt'] = 'Kein Vorgesetzter';
+$lang['users_edit_field_manager_description'] = 'Wenn ein User sein eigener Vorgesetzter / Manager ist (selbst) kann er sich seine Urlaubs- und Überstundenanfragen selbst genehmigen.';
+$lang['users_edit_button_self'] = 'Selbst';
+$lang['users_edit_button_select'] = 'Auswahl';
+$lang['users_edit_field_contract'] = 'Vertrag';
+$lang['users_edit_field_position'] = 'Position';
+$lang['users_edit_field_entity'] = 'Einheit';
+$lang['users_edit_field_hired'] = 'Anmeldedatum';
+$lang['users_edit_field_timezone'] = 'Zeitzone';
+$lang['users_edit_field_ldap_path'] = 'LDAP Pfad';
+$lang['users_edit_field_identifier'] = 'Interner Identifikator';
+$lang['users_edit_field_language'] = 'Sprache';
+$lang['users_edit_popup_manager_title'] = 'Vorgesetzten auswählen';
+$lang['users_edit_popup_manager_button_ok'] = 'OK';
+$lang['users_edit_popup_manager_button_cancel'] = 'Abbrechen';
+$lang['users_edit_popup_entity_title'] = 'Einheit auswählen';
+$lang['users_edit_popup_entity_button_ok'] = 'OK';
+$lang['users_edit_popup_entity_button_cancel'] = 'Abbrechen';
+$lang['users_edit_popup_position_title'] = 'Position auswählen';
+$lang['users_edit_popup_position_button_ok'] = 'OK';
+$lang['users_edit_popup_position_button_cancel'] = 'Abbrechen';
+$lang['users_edit_button_update'] = 'User aktualisieren';
+$lang['users_edit_button_cancel'] = 'Abbrechen';
+$lang['users_edit_flash_msg_success'] = 'User wurde erfolgreich aktualisiert';
+
+$lang['users_delete_flash_msg_success'] = 'User wurde erfolgreich gelöscht';
+$lang['users_reset_flash_msg_success'] = 'Passwort erfolgreich geändert';
+
+$lang['users_create_title'] = 'Neuen User anlegen';
+$lang['users_create_field_firstname'] = 'Vorname';
+$lang['users_create_field_lastname'] = 'Nachname';
+$lang['users_create_field_login'] = 'Anmelden';
+$lang['users_create_field_email'] = 'E-Mail';
+$lang['users_create_field_password'] = 'Passwort';
+$lang['users_create_field_role'] = 'Rolle';
+$lang['users_create_field_manager'] = 'Vorgesetzter';
+$lang['users_create_button_self'] = 'Selbst';
+$lang['users_create_button_select'] = 'Auswahl';
+$lang['users_create_field_contract'] = 'Vertrag';
+$lang['users_create_field_position'] = 'Position';
+$lang['users_create_field_entity'] = 'Einheit';
+$lang['users_create_field_hired'] = 'Anmeldedatum';
+$lang['users_create_field_timezone'] = 'Zeitzone';
+$lang['users_create_field_ldap_path'] = 'LDAP Pfad';
+$lang['users_create_field_identifier'] = 'Interner Identifikator';
+$lang['users_create_field_language'] = 'Sprache';
+$lang['users_create_popup_manager_title'] = 'Vorgesetzten auswählen';
+$lang['users_create_popup_manager_button_ok'] = 'OK';
+$lang['users_create_popup_manager_button_cancel'] = 'Abbrechen';
+$lang['users_create_popup_entity_title'] = 'Einheit auswählen';
+$lang['users_create_popup_entity_button_ok'] = 'OK';
+$lang['users_create_popup_entity_button_cancel'] = 'Abbrechen';
+$lang['users_create_popup_position_title'] = 'Position auswählen';
+$lang['users_create_popup_position_button_ok'] = 'OK';
+$lang['users_create_popup_position_button_cancel'] = 'Abbrechen';
+$lang['users_create_field_manager_description'] = 'Wenn ein User sein eigener Vorgesetzter / Manager ist (selbst) kann er sich seine Urlaubs- und Überstundenanfragen selbst genehmigen.';
+$lang['users_create_field_manager_alt'] = 'Kein Vorgesetzter';
+$lang['users_create_button_generate_password'] = 'Passwort erzeugen';
+$lang['users_create_button_create'] = 'User erstellen';
+$lang['users_create_button_cancel'] = 'Abbrechen';
+$lang['users_create_mandatory_js_msg'] = '"Das Feld " + fieldname + " ist zwingend erforderlich."';
+$lang['users_create_no_contract_confirm'] = 'Es wird empfohlen einen Vertrag zu wählen. Möchten Sie einen User ohne Vertrag erstellen?';
+$lang['users_create_flash_msg_success'] = 'User erfolgreich erstellt';
+$lang['users_create_login_check'] = 'Username ist bereits vergeben.';
+$lang['users_create_flash_msg_error'] = 'Dieser Username ist nicht verfügbar.';
+
+$lang['users_employees_thead_id'] = 'ID';
+$lang['users_employees_thead_firstname'] = 'Vorname';
+$lang['users_employees_thead_lastname'] = 'Nachname';
+$lang['users_employees_thead_email'] = 'E-Mail';
+
+$lang['users_reset_field_password'] = 'Passwort';
+$lang['users_reset_button_reset'] = 'Zurücksetzen';
+
+$lang['users_export_title'] = 'Liste der User';
+$lang['users_export_thead_id'] = 'ID';
+$lang['users_export_thead_firstname'] = 'Vorname';
+$lang['users_export_thead_lastname'] = 'Nachname';
+$lang['users_export_thead_email'] = 'E-Mail';
+$lang['users_export_thead_manager'] = 'Vorgesetzter';
