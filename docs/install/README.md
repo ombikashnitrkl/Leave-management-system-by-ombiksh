@@ -1,20 +1,20 @@
 # Installation
 
-Jorani has been tested with Apache, ngnix and lighttpd.
-Jorani is compatible with HHVM as Codeigniter is 100% compatible with the VM. 
-Jorani is compatible with PHP 7.0 (starting from v0.4.0) except for Excel exports (on May, 1st 2015)
+Leave management system has been tested with Apache, ngnix and lighttpd.
+It is compatible with HHVM as Codeigniter is 100% compatible with the VM. 
+It is compatible with PHP 7.0 (starting from v0.4.0) except for Excel exports (on May, 1st 2015)
 
 ## General considerations
 
 * The Jorani application must have write privileges on <code>application/logs</code> folder.
 * Some PHP extensions are required (e.g. mcrypt, mysqli, xml, zip, gd). 
-* The default user is *bbalet* and password is *bbalet*.
+* The default user is *ombikash* and password is *bbalet*.
 * A script at the root of the installation (requirements.php) allows you to check your system.
 * Change <code>application/config/config.php</code> in order to modify the default behavior of Jorani.
 
 ## Database setup
 
-Jorani has been tested with MySQL and MariaDB (please note that functions are created in the schema). Please follow these steps :
+It has been tested with MySQL. Please follow these steps :
 * Create a database.
 * Import <code>/sql/lms.sql</code>.
 * Change <code>application/config/database.php</code> according to your environment.
@@ -23,7 +23,7 @@ Please note that the schema contains procedures, so the user created must have E
 
 ## E-mail setup
 
-Jorani uses e-mail to notify users and their line managers. In order to setup e-mail modify 
+It uses e-mail to notify users and their line managers. In order to setup e-mail modify 
 <code>/application/config/email.php</code> file according to your environment.
 Please use the script <code>testmail.php</code> at the root of your installation if you want to debug and read the troubleshooting section of this script for additional hints.
 
@@ -50,7 +50,7 @@ In order to configure LDAP, locate these lines of code into <code>application/co
 
 * Switch ldap_enabled to <code>TRUE</code>.
 * Change <code>ldap_host</code> and <code>ldap_port</code> according to your environement.
-* Jorani tries to bind to LDAP according to the content of <code>ldap_basedn</code> in where <code>%s</code> is a placeholder for the user id to be checked into LDAP (e.g. <code>%s</code> will be replaced by the login from LMS db).
+* It tries to bind to LDAP according to the content of <code>ldap_basedn</code> in where <code>%s</code> is a placeholder for the user id to be checked into LDAP (e.g. <code>%s</code> will be replaced by the login from LMS db).
 * Contact your IT Admin in order to know more about how LDAP is configured into your organization. Change the value but <code>%s</code> must remain somewhere into this string.
 * The user id into Jorani and LDAP must be the same. When LDAP is activated, LMS doesn't use anymore the password stored into the database.
 
@@ -62,7 +62,7 @@ Since version 0.1.5, Jorani supports complex LDAP authentication schemes (where 
 
 ## Apache
 
-Jorani is a PHP/CI application using rewrite rules and .htaccess files. 
+It is a PHP/CI application using rewrite rules and .htaccess files. 
 So your Apache configuration must **allow overwriting configuration by .htaccess files and mod_rewrite must be enabled**.
 
 ## Other webservers
