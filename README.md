@@ -35,24 +35,8 @@ It is designed to provide simple leave and overtime request workflows for small 
 * Update the end of <code>/application/config/config.php</code> if you want to change the default behaviour.
 * It is recommended to change the private and public RSA keys (in <code>assets/keys</code>).
 * Check your installation with the <code>requirements.php</code> page at the root of your installation (e.g. http://localhost/lms/requirements.php).
-* The default user is *bbalet* and password is *bbalet*.
-
-## Contribute
-
-* Suggest ideas, declare bugs with Github's issue tracking system or Google group.
+* The default user is *ombikash* and password is *bbalet*.
 * [Read the TODO list](TODO.md) if you want to know what are the priorities.
-
-## Credits
-
-### Contributors
-
-* Github and Google groupe users for their ideas and tests.
-* Translation : Roger WOLFS (Dutch), Heng Vongkol (Khmer) Christian SONNENBERG (German), Hector NESTAR (Spanish), Dario BRIGNONE (Italian), Oleg KOPTEV, Yevhen Kyrylchenko (Russian) and Sayed Kabir Salehi (Farsi) and all participants of the Transifex project.
-
-### Third party libraries and components
-
-We thank the following open source projects for the components used by Jorani:
-
 #### Backend
 
 * CodeIgniter MVC framework http://www.codeigniter.com/
