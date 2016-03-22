@@ -34,9 +34,7 @@ It is designed to provide simple leave and overtime request workflows for small 
 * Update the end of <code>/application/config/email.php</code> with your e-mails settings.
 * Update the end of <code>/application/config/config.php</code> if you want to change the default behaviour.
 * It is recommended to change the private and public RSA keys (in <code>assets/keys</code>).
-* Check your installation with the <code>requirements.php</code> page at the root of your installation (e.g. http://localhost/lms/requirements.php).
 * The default user is *ombikash* and password is *bbalet*.
-* [Read the TODO list](TODO.md) if you want to know what are the priorities.
 #### Backend
 
 * CodeIgniter MVC framework http://www.codeigniter.com/
