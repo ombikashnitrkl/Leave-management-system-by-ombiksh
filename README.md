@@ -26,7 +26,7 @@ It is designed to provide simple leave and overtime request workflows for small 
 
 [See the installation instructions](docs/install/README.md) for advanced configuration. In a nutshell :
 * If you use Apache, **mod_rewrite must be activated and the config must allow overwriting settings with .htaccess file**.
-* Download or clone Jorani.
+* Download or clone it from github.
 * Upload the content of this folder on your server (in <code>/var/www/...</code>).
 * Create a database with <code>/sql/lms.sql</code> script.
 * Create a user with SELECT, INSERT, UPDATE, DELETE, EXECUTE permissions on the database.
